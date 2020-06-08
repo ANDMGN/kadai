@@ -1,0 +1,174 @@
+@charset "UTF-8";
+    
+    
+    
+* {
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 1600px;
+    background-color: aqua;
+
+}
+
+nav {
+    height 250px;
+}
+
+/*以下ヘッダー部分のCSS*/
+.list_container {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between
+}
+
+.header_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.header_list li {
+    margin: 31% 0% 2.5% 2.5%;
+    font-size: 15px;
+}
+
+.icon {
+    margin-right: 20%;
+    width: 100%;
+    height: 100%;
+    background-color: #f6f5f5;
+    border-radius: 50%;
+}
+
+.url {
+    width: 20%;
+    height: 20%;
+    margin-right: 20%;
+}
+
+
+li:hover{
+    text-decoration: underline
+}
+
+a {
+ 
+color: black;
+text-decoration: none;
+ 
+}
+
+/*以上ヘッダー部分のCSS*/
+
+
+
+
+/*下記、INDEXとFORMの共有部分CSS*/
+
+seciton h1 {
+    font-size: 40px;
+}
+
+.contents {
+    margin: 0 auto;
+    width: 80%
+}
+
+/*上記、INDEXとFORMの共有部分CSS*/
+
+
+
+
+/*下記、index部分CSS*/
+.baner_image {
+    width: 100%;
+    /*
+  height: 500px;
+  object-fit: cover;
+*/
+}
+
+seciton h1 {
+    font-size: 40px;
+/*    color: red;*/
+}
+
+.contents {
+    margin: 0 auto;
+    width: 80%
+}
+
+.table1 {
+    margin: 0 auto;
+    width: 100%;
+    background-color: beige;
+
+}
+
+
+.big {
+    font-size: 20px;
+    color: orange;
+}
+
+#section3 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.footer_design {
+    height: 30px;
+    width: 100%;
+    color: white;
+    background-color: black;
+    text-align: center;
+
+}
+
+/*上記、index部分CSS*/
+
+
+/*下記、form部分CSS*/
+.form_main {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+
+.form_design {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.form_design h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+}
+
+.form_design form {
+    margin: 0 25%;
+    text-align: center;
+    height: 600px;
+}
+
+.name_box, .email_box, .textarea_box{
+    margin: 10px auto;
+    width: 100%;
+    
+}

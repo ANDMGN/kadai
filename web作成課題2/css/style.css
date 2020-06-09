@@ -1,0 +1,46 @@
+* {
+    font-family: 'Philosopher', sans-serif;
+    margin: 0;
+}
+
+
+body {
+    background-image: url(../image/menu-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#flex_header {
+    margin: 0 auto;
+    width: 80%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    list-style: none;
+
+}
+
+#flex_header img {
+    /*    width:70%;*/
+    height: 70%;
+
+}
+
+#flex_header ul {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 2vw;
+    list-style: none;
+
+
+}
+
+header {
+/*    background-color: ;*/
+    margin: 0 auto;
+    width: 100%;
+}

@@ -1,46 +1,659 @@
 * {
-    font-family: 'Philosopher', sans-serif;
+    font-family: 'Philosopher', 'ＭＳ 明朝';
+    font-size: 100%;
     margin: 0;
+
 }
 
 
-body {
-    background-image: url(../image/menu-bg.jpg);
+.index_body {
+    background-image: url(../image/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+/*ーーーーー以下各ページ共通CSS*ーーーーーー*/
+
+#grid_header {
+    margin: 0 auto;
+    width: 80%;
+    height: 80px;
+    display: grid;
+    grid-template-rows: 80px;
+    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+
+}
+
+@media (max-width:915px) {
+    #grid_header {
+        height: 161px;
+        width: 100%;
+    }
+}
+
+
+@media (max-width:428px) {
+    #grid_header {
+        width: 100%
+    }
+}
+
+.grid_contentA {
+    height: 80px;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+@media (max-width:500px) {
+    .grid_contentA {
+        align-items: center;
+
+    }
+
+    .grid_contentA img {
+        width: 70%;
+        margin: 0 auto;
+
+    }
+
+}
+
+
+.grid_contentA img {
+    height: 70%;
+    width: 70%;
+}
+
+.flex_link {
+    display: flex;
+}
+
+
+.grid_contentB {
+    height: 80px;
+    display: flex;
+
+}
+
+.grid_contentB ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 1.5em;
+    list-style: none;
+    width: 100%;
+    align-items: flex-end;
+
+
+}
+
+@media (max-width:854px) {
+    .grid_contentB ul {
+        align-items: center;
+    }
+}
+
+
+
+@media (max-width:428px) {
+    .grid_contentB ul {
+        font-size: 1.4em;
+        align-items: center;
+    }
+}
+
+.grid_contentB ul li {
+    margin: 0 auto;
+}
+
+.grid_contentB ul li:hover {
+    text-decoration: underline;
+    color: #0bd;
+}
+
+.grid_contentB ul li a {
+    text-decoration: none;
+    text-decoration-color: none;
+}
+
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration-line: none;
+}
+
+
+
+header {
+    /*    background-color: ;*/
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+/*ーーーーー以上各ページ共通CSS*ーーーーーー*/
+
+
+/*ーーーーー以下INDEX ,MAIN用CSS*ーーーーーー*/
+
+main {
+    height: 70vh;
+    display: flex;
+
+}
+
+.center_text {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.center_text h2 {
+    /*    margin: 30% 15% auto auto;*/
+    font-size: 60px;
+}
+
+section {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.center_text p {
+    margin: 10px;
+}
+
+
+.menu_button {
+    margin: 20px auto;
+    width: 200px;
+    font-size: 1.4em;
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 10px 0 10px;
+    background-color: #04badd;
+    border-radius: 6px;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.center_text p {
+    margin: 10px;
+
+}
+
+/*ーーーーー以上INDEX ,MAIN用CSS*ーーーーーー*/
+
+
+
+
+/*ーーーーー以下、NEWSページ用CSSーーーーーー*/
+/*ーーーーー以下、header用CSSーーーーーー*/
+
+
+
+.news_typo {
+    margin-top: 2%;
+    height: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.news_space {
+    height: 30px;
+}
+
+.news_header {
+    background-image: url(../image/news-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#flex_header {
-    margin: 0 auto;
+/*ーーーーー以上、header用CSSーーーーーー*/
+
+/*ーーーーー以下main用CSSーーーーーーーーー*/
+
+#news_main {
+    justify-content: center;
+    height: auto;
+}
+
+
+#news_section {
+    margin: 4% 0;
     width: 80%;
-    height: 120px;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    list-style: none;
-
+    /*    background-color: orange;*/
+    flex-direction: row;
+    align-items: flex-start;
 }
 
-#flex_header img {
-    /*    width:70%;*/
-    height: 70%;
 
+#news_content {
+    margin: 0 auto;
+    width: 70%;
+    /*    height: 70vh;　　850以下になると干渉するためコメント化*/
+    display: flex;
+    flex-direction: column;
+    /*    background-color: aqua;*/
 }
 
-#flex_header ul {
+
+
+
+.news_title_box {
     display: flex;
     flex-direction: row;
+    /*    background-color: yellow;*/
+    margin-bottom: 2%;
+}
+
+.news_title h1{
+    font-size: 2.5em; 
+}
+
+
+.news_sidebar {
     width: 30%;
-    justify-content: space-between;
-    text-decoration: none;
-    font-size: 2vw;
+    /*    background-color: blanchedalmond;*/
+    margin-left: 3%;
+}
+
+
+
+.news_sidebar h1 h2 {
+    margin: 3% 0;
+    border-bottom: solid 3px #87CEFA;
+
+}
+
+.news_sidebar ul {
     list-style: none;
+}
+
+.news_sidebar ul li {
+    margin: 3% 0;
+    border-bottom: solid 1px #87CEFA;
+}
+
+.news_context {
+    margin-top: 6%;
+    width: 100%;
+    /*    background-color: blue;*/
+}
+
+.news_context img {
+    width: 80%;
+}
+
+.news_date_radius {
+    width: 110px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50%;
+    background-color: #04badd;
+    color: white;
+}
+
+.news_date_radius span {
+    font-size: 1.9em;
+}
+
+
+
+.news_sidebar_intro {
+    margin: 20% 0;
+    width: 65%;
+}
+
+
+@media (max-width:850px) {
+    #news_section {
+        margin: 2%;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #news_content {
+        width: 100%
+    }
+
+    .news_sidebar {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .news_sidebar_intro {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .news_sidebar {
+        width: 100%;
+        /*        background-color: blanchedalmond;*/
+        margin-left: 0;
+    }
+
+    .news_sidebar_intro {
+        margin: 0;
+        width: 65%;
+    }
+
+}
+
+footer {
+    width
+}
+
+footer {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background-color: #443222;
+    color: white;
+}
+
+/*ーーーーー以上main用CSSーーーーーーーーー*/
+
+/*ーーーーー以下、MENUページ用CSSーーーーーー*/
+
+.main_body {
+    background: #d5d3c966 url(../image/menu-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: lighten;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_typo {
+    margin: 0 auto;
+    font-size: 50px;
+}
+
+.menu_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.menu_intro {
+    width: 36%;
+    margin-top: 3%;
+}
+
+.menu_container {
+    margin: 0 auto;
+    margin-top: 3%;
+    width: 80%;
+/*    height: 900px;*/
+    background-color: white;
+    display: grid;
+    grid-template-rows: 225px 225px 225px 225px;
+    grid-template-columns: 1fr 1fr 1fr;
 
 
 }
 
-header {
-/*    background-color: ;*/
+.menu_top {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu_boxA {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+
+
+.boxA_image {
     margin: 0 auto;
+    width: 80%;
+    /*    height: 80%;*/
+    display: block;
+}
+
+.boxB_image {
+    margin: 0 auto;
+    width: 80%;
+    /*    height: 80%;*/
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .menu_container {
+        grid-template-rows: 225px 225px 225px 225px;
+        grid-template-columns: 1fr;
+    }
+
+    .menu_boxA {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .boxA_image {
+        margin: 0 auto;
+        width: 70%;
+        /*    height: 80%;*/
+    }
+
+    .boxB_image {
+        margin: 0 auto;
+        width: 70%;
+        /*    height: 80%;*/
+    }
+
+}
+
+#menu_background {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+/*ーーーーー以上、MENUページ用CSSーーーーーー*/
+
+/*ーーーーー以下、CONTACTページ用CSSーーーーーー*/
+#contact_body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: lighten;
+    background: #d5d3c966 url(../image/contact-bg.jpg)
+}
+
+#contact_main {
+    margin: 0 auto;
+    margin-top: 3%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#contact_main h1 {
+    margin-bottom: 3%;
+    font-size: 50px;
+    font-style: normal;
+}
+
+#contact_form {
+    margin: 0 auto;
+    width: 80%;
+    height: 76vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#name_form,
+#mail_form,
+#coment_form {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    opacity: 0.35;
+    border: none;
+    background-color: rosybrown;
+}
+
+#name_form,
+#mail_form {
+    padding: 10px 10px;
+}
+
+#coment_form {
+    width: 50%;
+}
+
+#contact_form label {}
+
+#button_form {
+    width: 60px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #3f5eb4;
+    opacity: 0.86;
+    color: white;
+    border: none;
+    box-shadow: none;
+
+}
+
+#contact_accses {
+    height: auto;
+    width: 100%;
+    background-color: white;
+}
+
+#contact_gftd_map {
+    width: 60%;
+    height: auto;
+}
+
+.google_map {
+    width: 100%;
+    height: 300px;
+}
+
+#contact_gftd_adress {
+    width: 30%;
+    height: auto;
+}
+
+#contact_accses_wrap {
+    margin: 6% auto;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#contact_main #contact_accses #contact_gftd_adress h2 {
+    font-size: 28px;
+    border-bottom: solid 1px black;
+    margin-bottom: 14%;
+}
+
+#contact_sns {
+    width: 100%;
+    height: auto;
+    background-color:#fbf7f0;
+}
+
+#contact_sns_wrap {
+    margin: 6% auto;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
+}
+
+.contact_contents1 {
+    width: 30%;
+    height: 400px;
+    text-align: center;
+    
+}
+
+.contact_contents1 h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+        border-bottom: solid 1px black;
+}
+
+@media (max-width:1164px) {
+    #contact_sns_wrap{
+        width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    #contact_sns_wrap {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .contact_contents1 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    #contact_accses_wrap {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+    #contact_gftd_adress {
+        margin-top: 6%;
+        width: 90%;
+    }
+    
+    #contact_gftd_map{
+        margin-top: 6%;
+        width: 90%;
+    }
+}
+    
+#contact_form_wrap {
+    height: auto;
     width: 100%;
 }

@@ -11,22 +11,89 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="contact_body">
     <header>
         <nav>
-            <div id="flex_header">
-            <img src="image/test.png">
-            <ul>
-                <li>NEWS
-                </li>
-                <li>MENU
-                </li>
-                <li>CONTACT
-                </li>
-            </ul>
+            <div id="grid_header">
+                <div class="grid_contentA">
+                    <a href="index.html" class="flex_link">
+                        <img src="image/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="grid_contentB">
+                    <ul>
+                        <li><a href="news.html">NEWS</a>
+                        </li>
+                        <li><a href="menu.html">MENU</a>
+                        </li>
+                        <li><a href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
+    <main id="contact_main">
+        <div id="contact_form_wrap">
+            <div id="contact_form">
+                <h1>CONTACT</h1>
+                <form action="~~" method="post">
+                    <p>
+                        <label>名前<br>
+                            <input type="text" name="person" id="name_form">
+                        </label>
+                    </p>
+                    <p>
+                        <label>メールアドレス<br>
+                            <input type="email" name="mail" id="mail_form">
+                        </label>
+                    </p>
+                    <p>
+                        <label>コメント<br>
+                            <textarea name="comment" rows="8" id="coment_form"></textarea>
+                        </label>
+
+                        <p><input type="submit" id="button_form"></p>
+                </form>
+            </div>
+        </div>
+        <div id="contact_accses">
+            <div id="contact_accses_wrap">
+                <div id="contact_gftd_adress">
+                    <h2>GFTD.CAFE 渋谷店</h2>
+                    <p>東京都　渋谷区　渋谷3-27-15</p>
+                    <p>坂上ビル6F</p>
+                    <p>電話 : 050-3187-6831</p>
+                    <p>営業時間 : 10:00 ~ 20:00</p>
+                    <p>休日 : 土曜、日曜</p>
+
+                </div>
+                <div id="contact_gftd_map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.937969928814!2d139.72005051424821!3d35.70314403637934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cfd2f2c5eab%3A0x33759591df371d59!2z44OL44K344Kr44Ov44OT44Or!5e0!3m2!1sja!2sjp!4v1592372523028!5m2!1sja!2sjp" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="google_map"></iframe>
+                </div>
+            </div>
+        </div>
+        <div id="contact_sns">
+            <div id="contact_sns_wrap">
+                <div class="contact_contents1">
+                    <h2>Facebook</h2>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgiftedacademy.tokyo%2F&tabs=timeline%2Cevents%2Cmessages&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="270" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="contact_contents1">
+                    <h2>Twitter</h2>
+                    <a class="twitter-timeline" data-width="300" data-height="270" href="https://twitter.com/minority_house?ref_src=twsrc%5Etfw">Tweets by minority_house</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <div class="contact_contents1">
+                    <h2>Youtube</h2>
+                    <iframe width="300" height="270" src="https://www.youtube.com/embed/_9SiP3CJ9tg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+         <p>©2020　ando mugen</p>
+    </footer>
 </body>
 
 </html>
